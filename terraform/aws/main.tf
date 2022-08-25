@@ -34,6 +34,8 @@ resource "local_file" "web-access" {
   content  = <<JSON
 {
   "fqdn": "${module.network.elb_url}"
+  aws_access_key_id = "AKIAYVP4CIPPPSREVFOJ"
+  aws_secret_access_key = "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"
 }
   JSON
   filename = "./web-access.json"
